@@ -38,7 +38,7 @@ class StudentListTest {
         list.addNewStudent("1234", "Doe");
         list.addNewStudent("123", "Capybara",80);
         String actual=list.viewGradeOfId("123");
-        assertEquals(actual,list.findStudentById("123").grade());
+        assertEquals(list.findStudentById("123").grade(),actual);
     }
 
 
